@@ -50,18 +50,18 @@ Built as a **hackathon-ready project** with live updates, admin moderation, and 
 
 ---
 
-### ▶️ How to Run the Project (Local)
+# ▶️ How to Run the Project (Local)
 
-# 1️⃣ Backend Setup (Required for Full Functionality)
+## 1️⃣ Backend Setup (Required for Full Functionality)
 
     cd backend
     pip install -r requirements.txt
     uvicorn app.main:app --reload
 
-# 2️⃣ Run the Frontend
+## 2️⃣ Run the Frontend
     frontend/index.html
 
-# 3️⃣ Check the Database
+## 3️⃣ Check the Database
     database/schema.sql (Contains the SQL command to Check Database)
 
 ---
