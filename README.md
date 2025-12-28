@@ -61,6 +61,9 @@ Built as a **hackathon-ready project** with live updates, admin moderation, and 
 # 2️⃣ Run the Frontend
     frontend/index.html
 
+# 3️⃣ Check the Database
+    database/schema.sql (Contains the SQL command to Check Database)
+
 ---
 
 ### 🌍 Deployment Note (IMPORTANT)
