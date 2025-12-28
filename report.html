@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Report Incident</title>
+  <link rel="stylesheet" href="css/report.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Report an Incident</h1>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="admin.html">Admin</a>
+  </div>
+
+  <div class="report-container">
+    <h2>Incident Details</h2>
+
+    <label>Incident Type</label>
+    <input type="text" id="type" placeholder="Fire, Accident, Flood..." required />
+
+    <label>Description</label>
+    <textarea id="description" rows="4" placeholder="Describe clearly..." required></textarea>
+
+    <label>Location</label>
+    <input type="text" id="location" placeholder="MG Road, Bengaluru" required />
+
+    <label>State</label>
+    <input type="text" id="state" placeholder="Karnataka" required />
+
+    <label>Pin Code</label>
+    <input type="number" id="pin" placeholder="560001" required />
+
+    <button onclick="submitIncident()">Submit Incident</button>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script>
+    async function submitIncident() {
+      const data = {
+        type: document.getElementById("type").value,
+        description: document.getElementById("description").value,
+        location: document.getElementById("location").value,
+        state: document.getElementById("state").value,
+        pin: Number(document.getElementById("pin").value)
+      };
+
+      const res = await fetch(`${API_BASE}/incidents`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (!res.ok) {
+        const err = await res.json();
+        alert("❌ Error: " + JSON.stringify(err));
+        return;
+      }
+
+      alert("✅ Incident reported successfully!");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
