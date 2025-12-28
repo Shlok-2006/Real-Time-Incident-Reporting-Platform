@@ -50,7 +50,7 @@ Built as a **hackathon-ready project** with live updates, admin moderation, and 
 
 ---
 
-# ▶️ How to Run the Project (Local)
+### ▶️ How to Run the Project (Local)
 
 ## 1️⃣ Backend Setup (Required for Full Functionality)
 
@@ -80,6 +80,15 @@ Database & AI model dependency
 
 ---
 
+### 🔄 Incident Status Management System (Admin Controlled)
+
+Each reported incident follows a controlled lifecycle, managed exclusively by the admin dashboard to ensure authenticity, accountability, and structured response.
+
+📌 Supported Status Flow
+unverified → in_progress → resolved 
+
+---
+
 ### 🏆 Use Cases
 
 - Smart city incident monitoring
@@ -99,4 +108,3 @@ Database & AI model dependency
 - Mobile app integration
 
 ---
-
