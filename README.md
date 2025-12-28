@@ -66,6 +66,16 @@ Built as a **hackathon-ready project** with live updates, admin moderation, and 
 
 ---
 
+### 🔄 Incident Status Management System (Admin Controlled)
+
+Each reported incident follows a controlled lifecycle, managed exclusively by the admin dashboard to ensure authenticity, accountability, and structured response.
+
+📌 Supported Status Flow
+
+unverified → in_progress → resolved 
+
+---
+
 ### 🌍 Deployment Note (IMPORTANT)
 
 🚨 Only the frontend is deployed in the hosted version of this project.
@@ -77,16 +87,6 @@ Hackathon time constraints
 Database & AI model dependency
 
 ⚠️ For full functionality, please run the backend locally as described above.
-
----
-
-### 🔄 Incident Status Management System (Admin Controlled)
-
-Each reported incident follows a controlled lifecycle, managed exclusively by the admin dashboard to ensure authenticity, accountability, and structured response.
-
-📌 Supported Status Flow
-
-unverified → in_progress → resolved 
 
 ---
 
