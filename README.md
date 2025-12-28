@@ -90,10 +90,10 @@ Database & AI model dependency
 ### 🚀 Future Improvements
 
 - Authentication (Admin & Users)
--Real-time WebSocket updates
--Geo-mapping with Google Maps
--Notification system (SMS / Email)
--Mobile app integration
+- Real-time WebSocket updates
+- Geo-mapping with Google Maps
+- Notification system (SMS / Email)
+- Mobile app integration
 
 ---
 
