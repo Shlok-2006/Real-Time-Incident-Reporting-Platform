@@ -1,0 +1,123 @@
+/* ===============================
+   GLOBAL
+================================ */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+  background: #0f172a; /* Deep navy */
+  color: #e5e7eb;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #cbd5f5;
+}
+
+/* ===============================
+   NAVIGATION (PREMIUM GLOW)
+================================ */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin: 30px 0 45px;
+}
+
+.nav a {
+  position: relative;
+  padding: 14px 36px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 600;
+  background: #020617;
+  border-radius: 14px;
+  border: 1px solid #1e293b;
+  transition: transform 0.25s ease;
+  z-index: 1;
+}
+
+/* Glow */
+.nav a::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #22d3ee,
+    #818cf8
+  );
+  background-size: 300%;
+  filter: blur(14px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  animation: glowFlow 6s linear infinite;
+}
+
+.nav a:hover::before {
+  opacity: 0.9;
+}
+
+.nav a:hover {
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   INCIDENT FEED
+================================ */
+#incidentList {
+  max-width: 920px;
+  margin: auto;
+}
+
+#incidentList div {
+  background: #020617;
+  padding: 20px 24px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+#incidentList strong {
+  font-size: 17px;
+  color: #60a5fa;
+}
+
+#incidentList button {
+  margin-top: 12px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #2563eb;
+  color: #e5e7eb;
+}
+
+#incidentList button:hover {
+  background: #1d4ed8;
+}
+
+/* ===============================
+   ANIMATION
+================================ */
+@keyframes glowFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

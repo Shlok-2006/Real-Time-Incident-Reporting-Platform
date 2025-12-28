@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pymysql
+passlib
+sentence-transformers
+transformers
+torch
+python-dotenv
