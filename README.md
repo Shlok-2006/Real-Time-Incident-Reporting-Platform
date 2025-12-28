@@ -85,6 +85,7 @@ Database & AI model dependency
 Each reported incident follows a controlled lifecycle, managed exclusively by the admin dashboard to ensure authenticity, accountability, and structured response.
 
 📌 Supported Status Flow
+
 unverified → in_progress → resolved 
 
 ---
