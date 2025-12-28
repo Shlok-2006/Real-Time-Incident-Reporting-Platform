@@ -50,50 +50,6 @@ Built as a **hackathon-ready project** with live updates, admin moderation, and 
 
 ---
 
-## 📁 Project Structure
-
-incident-response-platform/
-│
-├── backend/
-│   ├── app/
-│   │   ├── main.py              # FastAPI entry point
-│   │   ├── database.py          # MySQL connection
-│   │   ├── models.py            # DB models
-│   │   ├── schemas.py           # Pydantic schemas
-│   │   ├── crud.py              # DB operations
-│   │   ├── auth.py              # Admin authentication
-│   │   ├── deps.py              # Dependencies (DB, auth)
-│   │   └── routers/
-│   │       ├── incidents.py     # Incident APIs
-│   │       └── admin.py         # Admin APIs
-│   │
-│   ├── requirements.txt
-│   └── README.md
-│
-├── frontend/
-│   ├── index.html               # Incident feed
-│   ├── report.html              # Report incident
-│   ├── admin.html               # Admin dashboard
-│   │
-│   ├── css/
-│   │   └── style.css
-│   │
-│   ├── js/
-│   │   ├── api.js               # API calls
-│   │   ├── feed.js              # Incident feed logic
-│   │   ├── report.js            # Report submission
-│   │   └── admin.js             # Admin actions
-│   │
-│   └── assets/                  # Icons, images
-│
-├── database/
-│   └── schema.sql               # MySQL schema
-│
-├── README.md                    # Project overview
-└── deployment.md                # Deployment steps
-
----
-
 ### ▶️ How to Run the Project (Local)
 
 # 1️⃣ Backend Setup (Required for Full Functionality)
